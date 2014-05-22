@@ -1,0 +1,24 @@
+<?xmLed version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ArduinoLEDControl</string>
+    <string name="action_settings">Settings</string>
+    <string name="Led1">Led 1</string>
+    <string name="Led2">Led 2</string>
+    <string name="Led3">Led 3</string>
+    <string name="Led4">Led 4</string>
+    <string name="Led5">Led 5</string>
+    <string name="Led6">Led 6</string>
+    
+    <string name="Led7">Led 7</string>
+    <string name="Led8">Led 8</string>
+    <string name="Led9">Led 9</string>
+    <string name="Led10">Led 10</string>
+    <string name="Led11">Led 11</string>
+    <string name="Led12">Led 12</string>
+    
+    <string name="sVoice">Voice Command</string>
+    <string name="sLoop">Next Pattern</string>
+    <string name="sStop">Stop</string>
+
+</resources>

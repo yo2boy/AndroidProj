@@ -1,0 +1,306 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/TableLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center_vertical"
+    android:layout_margin="30dp"
+    android:stretchColumns="0,1" >
+
+    <TableRow
+        android:id="@+id/TableRow11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="40dp" >
+
+        <TextView
+            android:id="@+id/TextView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:paddingRight="20dp"
+            android:text="@string/Led1"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <Switch
+            android:id="@+id/switch1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|fill_vertical|left" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/TableRow12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="40dp" >
+
+        <TextView
+            android:id="@+id/TextView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:paddingRight="20dp"
+            android:text="@string/Led2"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <Switch
+            android:id="@+id/switch2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|fill_vertical|left" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/TableRow09"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="40dp" >
+
+        <TextView
+            android:id="@+id/TextView09"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:paddingRight="20dp"
+            android:text="@string/Led3"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <Switch
+            android:id="@+id/switch3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|fill_vertical|left" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/TableRow10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="40dp" >
+
+        <TextView
+            android:id="@+id/TextView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:paddingRight="20dp"
+            android:text="@string/Led4"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <Switch
+            android:id="@+id/switch4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|fill_vertical|left" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/TableRow07"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="40dp" >
+
+        <TextView
+            android:id="@+id/TextView07"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:paddingRight="20dp"
+            android:text="@string/Led5"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <Switch
+            android:id="@+id/switch5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|fill_vertical|left" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/TableRow08"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="40dp" >
+
+        <TextView
+            android:id="@+id/TextView08"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:paddingRight="20dp"
+            android:text="@string/Led6"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <Switch
+            android:id="@+id/switch6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|fill_vertical|left" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/TableRow05"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="40dp" >
+
+        <TextView
+            android:id="@+id/TextView05"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:paddingRight="20dp"
+            android:text="@string/Led7"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <Switch
+            android:id="@+id/switch7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|fill_vertical|left" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/TableRow06"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="40dp" >
+
+        <TextView
+            android:id="@+id/TextView06"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:paddingRight="20dp"
+            android:text="@string/Led8"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <Switch
+            android:id="@+id/switch8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|fill_vertical|left" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/TableRow03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="40dp" >
+
+        <TextView
+            android:id="@+id/TextView03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:paddingRight="20dp"
+            android:text="@string/Led9"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <Switch
+            android:id="@+id/switch9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|fill_vertical|left" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/TableRow04"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="40dp" >
+
+        <TextView
+            android:id="@+id/TextView04"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:paddingRight="20dp"
+            android:text="@string/Led10"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <Switch
+            android:id="@+id/switch10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|fill_vertical|left" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/TableRow01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="40dp" >
+
+        <TextView
+            android:id="@+id/TextView01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:paddingRight="20dp"
+            android:text="@string/Led11"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <Switch
+            android:id="@+id/switch11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|fill_vertical|left" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/TableRow02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="40dp" >
+
+        <TextView
+            android:id="@+id/TextView02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:paddingRight="20dp"
+            android:text="@string/Led12"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <Switch
+            android:id="@+id/switch12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|fill_vertical|left" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:minHeight="40dp">
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </TableRow>
+
+    <Button
+        android:id="@+id/bVoice"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:onClick="voice"
+        android:text="@string/sVoice" />
+
+    <Button
+        android:id="@+id/bLoop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="loop"
+        android:text="@string/sLoop" />
+
+    <Button
+        android:id="@+id/bStop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="stop"
+        android:text="@string/sStop" />
+
+</TableLayout>
