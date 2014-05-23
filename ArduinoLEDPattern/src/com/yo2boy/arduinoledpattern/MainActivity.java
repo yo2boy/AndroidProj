@@ -17,7 +17,7 @@ import android.widget.Toast;
 
 public class MainActivity extends Activity implements OnCheckedChangeListener {
 	
-	static final int check = 1111;
+	//static final int check = 1111;
 	int count = 0;
 	// arr of switches
 	private final static Integer[] ids = { R.id.switch1, R.id.switch2,
@@ -32,7 +32,7 @@ public class MainActivity extends Activity implements OnCheckedChangeListener {
 		registerLedChangeListener(ids);
 	}
 
-	// register all onCheckedChangeListener for all Switch
+	// register all onCheckedChangeListener for all switches
 	private void registerLedChangeListener(Integer... ids) {
 		for (int i = 0; i < ids.length; i++) {
 			Integer id = ids[i];
@@ -45,7 +45,7 @@ public class MainActivity extends Activity implements OnCheckedChangeListener {
 	protected void onActivityResult(int requestCode, int resultCode, Intent data) {
 		
 		Switch led;		
-		if (requestCode == check && resultCode == RESULT_OK) {
+		if (requestCode == 1 && resultCode == RESULT_OK) {
 			ArrayList<String> results = data
 					.getStringArrayListExtra(RecognizerIntent.EXTRA_RESULTS);
 			if (results.get(0).equalsIgnoreCase("kriss kross"))
@@ -166,6 +166,7 @@ public class MainActivity extends Activity implements OnCheckedChangeListener {
 			default:
 				break;
 			}
+			//loop through all patterns until button is pressed for the 6th time, which then resets back to 0
 			count++;
 			if (count == 6)
 				count = 0;
@@ -178,7 +179,7 @@ public class MainActivity extends Activity implements OnCheckedChangeListener {
 	public void stop(View v) {
 		try {
 			Toast.makeText(this, "Stopping", Toast.LENGTH_SHORT).show();
-			sendString("Z"); // send over serial to mah beloved 'duino
+			sendString("Z"); // Send "Z" to Arduino which stops the execution
 			Switch led;
 			for (int i = 0; i < ids.length; i++) {
 				led = (Switch) findViewById(ids[i]);
@@ -192,14 +193,14 @@ public class MainActivity extends Activity implements OnCheckedChangeListener {
 			Toast.makeText(this, e.getMessage(), Toast.LENGTH_SHORT).show();
 		}
 	}
-	
+	//Implementing Speech Recognizer 
 	public void voice(View v){
 		try{
 			Intent i = new Intent(RecognizerIntent.ACTION_RECOGNIZE_SPEECH);
 			i.putExtra(RecognizerIntent.EXTRA_LANGUAGE_MODEL,
 					RecognizerIntent.LANGUAGE_MODEL_FREE_FORM);
 			i.putExtra(RecognizerIntent.EXTRA_PROMPT, "Your wish is my command");
-			startActivityForResult(i, check);
+			startActivityForResult(i, 1);
 		} catch (Exception e){
 			Toast.makeText(this, e.getMessage(), Toast.LENGTH_SHORT).show();
 		}
@@ -285,7 +286,7 @@ public class MainActivity extends Activity implements OnCheckedChangeListener {
 		}
 	}
 
-	// Send to arduino
+	// Send to Arduino
 	private void sendString(String toSend) {
 		Intent i = new Intent("primavera.arduino.intent.action.SEND_DATA");
 		i.putExtra("primavera.arduino.intent.extra.DATA", toSend.getBytes());
